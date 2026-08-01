@@ -59,13 +59,16 @@ class LinkedList:
         return builder
             
 if __name__ == "__main__":
-    ll = LinkedList()
-    ll.append(1)
-    ll.append(2)
-    ll.append(3)
-    ll.prepend(0)
+    def checker():
+        ll = LinkedList()
+        ll.append(1)
+        ll.append(2)
+        ll.append(3)
+        ll.prepend(0)
 
-    print(ll.to_list())     # [0, 1, 2, 3]
-    print(ll.search(2))     # True
-    ll.delete(2)
-    print(ll.to_list())     # [0, 1, 3]
+        assert ll.to_list() == [0, 1, 2, 3]
+        assert ll.search(2) ==  True
+        ll.delete(2)
+        assert ll.to_list() == [0, 1, 3]
+
+        print("all good")
