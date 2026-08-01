@@ -6,4 +6,5 @@
 ```
 
 This is not a mockery of the schools sample codes, rather my own collection.
-Open a pull req if anything is broken.
+
+Let me know if anything is broken.
