@@ -36,7 +36,7 @@ class BST:
     def __init__(self):
         self.head = None
 
-    def insert(self, newData): #this method feels wrong
+    def insert(self, newData):
         if self.head is not None:
             parent = None
             curr = self.head

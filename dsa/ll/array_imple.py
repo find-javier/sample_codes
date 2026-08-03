@@ -59,8 +59,7 @@ def delete(item_to_delete):
 
 def pop_front():
     global capacity, data, nxt, head, freeHead
-    #FIX ME
-    pass
+
 
 
 def pop_back():
