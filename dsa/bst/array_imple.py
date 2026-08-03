@@ -1,36 +1,44 @@
-# assume bst = [left, root, right]
+# assume bst = [[left, root, right], ...]
 # bst should be a 2d array
-
-# THIS FUNCTION IS BROKEN, FIX ME
 def insert(val):
     global bst
-
-    if bst[0] == [-1, None, -1]:
-        bst[0] = [2, val, 3]
+    if not bst:
+        bst.append([-1, val, -1])
         return
-
     # handle traversal
+    curr_index = 0
     curr = bst[0]
-    nxt = -1
-    while curr[0] != -1 and curr[2] != -1:
+    while True:
         if val < curr[1]:
-            nxt = curr[0]
-            curr = bst[curr[0]]
-        if val > curr[1]:
-            nxt = curr[2]
-            curr = bst[curr[2]]
-    bst[nxt] = [nxt*2, val, nxt*2+1]
-    return
-
+            if curr[0] == -1:
+                bst.append([-1, val, -1])
+                curr[0] = len(bst)-1
+            curr_index = curr[0]
+            curr = bst[curr_index]
+        elif val > curr[1]:
+            if curr[1] == -1:
+                bst.append([-1, val, -1])
+                curr[2] = len(bst)-1
+            curr_index = curr[2]
+            curr = bst[curr_index]
+        else:
+            return
 
 def preorder():
+    #clearly broken btw
     global bst
     for i in bst:
         print (i)
 
+
 #init bst
-bst = [[-1, None, -1] for _ in range(20)]
+bst = []
 root = 0
 
+insert("1")
+insert("2")
+insert("5")
+insert("4")
+insert("3")
 
 preorder()
