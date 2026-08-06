@@ -8,3 +8,5 @@
 This is not a mockery of the schools sample codes, rather my own collection.
 
 Let me know if anything is broken.
+
+The dataset to be used for all sorting, searching and sql/webapp stuff is the periodictable.csv file.

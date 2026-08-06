@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href = "../static/styles.css"></head><body><div><h1>Todays date is {{date}}</h1></div><div><h3>here is the code that generated this</h3></div><div><pre><code>
+@app.route("/insert/")
+def insert_today():
+    today = datetime.now().strftime("%d-%m-%Y")
+    return redirect(url_for("insert", date=today))
+
+@app.route("/insert/&lt string:date &gt")
+def insert(date):
+    return render_template("date.html", date = date)
+</code></pre></div></body></html>

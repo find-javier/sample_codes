@@ -1,0 +1,7 @@
+
+.card{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Gives the container height to center within */
+}

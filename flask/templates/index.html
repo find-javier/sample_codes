@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        I dont know how to do flask, hence here are the notes for it.
+    </title>
+    <link rel = "stylesheet" href = "../static/styles.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <p><a href="{{ url_for('insert_today') }}">what day is it today</a></p>
+        <p><a href="{{url_for('mongoose')}}">mango database</a></p>
+
+        <div>
+            <h3>This is the code that generated this</h3>
+
+            <pre><code>
+&lt;p&gt;&lt;a href=&quot;{{ url_for('insert_today') }}&quot;&gt;what day is it today&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;{{url_for('mongoose')}}&quot;&gt;mango database&lt;/a&gt;&lt;/p&gt;
+            </code></pre>
+
+        </div>
+    </div>
+</body>
+
+</html>

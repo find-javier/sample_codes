@@ -57,7 +57,13 @@ class LinkedList:
             builder.append(curr.val)
             curr = curr.next
         return builder
-            
+
+#     __          __
+#    / /____ ___ / /________ ____ ___ ___
+#   / __/ -_|_-</ __/ __/ _ `(_-</ -_|_-<
+#   \__/\__/___/\__/\__/\_,_/___/\__/___/
+
+
 if __name__ == "__main__":
     def checker():
         ll = LinkedList()
