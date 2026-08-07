@@ -5,8 +5,8 @@
 /___/_/ |_/_/  /_/_/  /____/___/  \___/\____/____/___/___/
 ```
 
-This is not a mockery of the schools sample codes, rather my own collection.
+Sample codes for the H2 Computing syllabus.
 
-Let me know if anything is broken.
+Create a PR if anything is broken.
 
-The dataset to be used for all sorting, searching and sql/webapp stuff is the periodictable.csv file.
+The dataset to be used for all sorting, searching and sql/webapp stuff is the periodicTable.csv file.
